@@ -1,0 +1,146 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: #1a1818;
+    background: #d4caca;
+  }
+  a {
+    text-decoration: none;
+    color: #dad7d8;
+  }
+  
+  /* Header */
+  .header {
+    background: hsl(138, 16%, 29%);
+    color: rgb(226, 218, 218);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background: rgb(219, 207, 207);
+  }
+  .hero-text h2 {
+    font-size: 2em;
+  }
+  .hero-text .btn {
+    background: hsl(125, 24%, 91%);
+    color: rgb(26, 23, 23);
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: inline-block;
+  }
+  .profile-img {
+    width: 200px;
+    border-radius: 100px;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2em;
+  }
+  .projets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+  }
+  
+  .projet {
+    background-color: #d9e9dd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(136, 104, 104, 0.1);
+    text-align: center;
+  }
+  
+  .projet img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .projet h3 {
+    margin-top: 15px;
+  }
+  
+  .projet a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: hsl(204, 22%, 56%);
+    color: rgb(24, 22, 22);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .contact input,
+  .contact textarea {
+    padding: 0.8em;
+    border: 1px solid #dac8c8;
+    border-radius: 5px;
+  }
+  .contact button {
+    width: 100px;
+    padding: 0.5em;
+    background: #ddf8dd;
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #f3eae8;
+      position: absolute;
+      right: 1em;
+      top: 60px;
+    }
+    .nav-links.show {
+      display: flex;
+    }
+    .burger {
+      display: flex;
+    }
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
