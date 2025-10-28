@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>;
+    <div>
+    <div>
+        <header class="header">
+            <h1>PORTFOLIO</h1>
+            <nav id="nav">
+              <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">profil</a></li>
+                <li><a href="#work">projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+              <div class="burger" id="burger">
+                <div></div><div></div><div></div>
+              </div>
+            </nav>
+    </header>       
+    </div>
+    <section class="hero">
+        <div class="hero-text">
+          <h1>Salut, je suis NEPITIMABEYE BEMADJIBEYE Ruth</h1>
+          <h3>je suis une develappeuse</h3>
+          <a href="#work" class="btn"> Mes réalisations</a>
+        </div>
+        <img src="moi.jpeg" alt="profile-img" class="profile-img">
+      </section>
+    
+      <section id="about" class="about">
+      <h2>A propos de moi</h2>
+        <p style="text-align: justify;"> Je suis une Dev web et mobile en formation, je suis pationnée par le numérique </p>
+      </section>
+      <section class="projets">
+        <div class="projet">
+          <img src="images/projet1.jpg" alt="Projet 1">
+          <h3>Application web</h3>
+          <p>Une application web de gestion des tâches, développée avec HTML, CSS et JavaScript.</p>
+          <a href="#">Voir le projet</a>
+        </div>
+        <div class="projet">
+          <img src="images/projet2.jpg" alt="Projet 2">
+          <h3>Portfolio Responsive</h3>
+          <p>Un site personnel responsive pour présenter mes projets et compétences.</p>
+          <a href="#">Voir le projet</a>
+        </div>
+        <div class="projet">
+          <img src="images/projet3.jpg" alt="Projet 3">
+          <h3>Maquette</h3>
+          <p>Une page conçu pour une publucité et la vente en ligne des produits.</p>
+          <a href="#">Voir le projet</a>
+        </div>
+      </section>
+    
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    
+      <script src="script.js"></script>
+    </body>
+
+</div>
+</body>
+</html>
